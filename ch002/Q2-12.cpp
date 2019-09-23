@@ -1,14 +1,11 @@
 #include <stdio.h>
-
 #define VMAX 21 
-
 
 typedef struct {
 	char name[20];
 	int height;
 	double vision;
 } PhysCheck;
-
 
 double ave_height(const PhysCheck dat[], int n)
 {
@@ -20,7 +17,6 @@ double ave_height(const PhysCheck dat[], int n)
 
 	return sum / n;
 }
-
 
 void dist_vision(const PhysCheck dat[], int n, int dist[])
 {
@@ -63,8 +59,8 @@ int main(void)
 	for (i = 0; i < VMAX; i++) {
 		printf("%3.1f ~ : ", i / 10.0);
 		for (j = 0; j < vdist[i]; j++)
-			putchar('*');
-		putchar('\n');
+			printf("*");
+		printf("\n");
 	}
 
 	return 0;
