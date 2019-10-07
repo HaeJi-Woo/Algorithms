@@ -1,12 +1,16 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-int factorial(int n) {
-	int sum = 0;
-	for (int i = 1; i <= n; i++)
-		sum += i;
+int factorial(int n)
+{
+	int i = 0;
+	int result = 1;
 
-	return sum;
+	for (i = n; i > 0; i--)
+	{
+		result *= i;
+	}
+	return result;
 }
 
 int main(void)
