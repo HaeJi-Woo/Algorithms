@@ -18,5 +18,5 @@ int main(void)
 	int x;
 	printf("정수를 입력하세요. : ");
 	scanf("%d", &x);
-	printf("%d의 순차곱셈 값은 %d이입니다.\n", x, factorial(x));
+	printf("%d의 순차곱셈 값은 %d이입니다.\ n", x, factorial(x));
 }

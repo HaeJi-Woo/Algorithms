@@ -15,16 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="factorial.c">
+    <ClCompile Include="bubble1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Q5-01.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="euclid.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Q5-01-02.c">
+    <ClCompile Include="Q6-02.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
