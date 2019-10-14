@@ -40,7 +40,7 @@ int main(void)
 	puts("버블 정렬(과정 출력)");
 	printf("요솟수 : ");
 	scanf("%d", &nx);
-	x = calloc(nx, sizeof(int));
+	x = (int *)calloc(nx, sizeof(int));
 
 	for (i = 0; i < nx; i++) {
 		printf("x[%d] : ", i);
