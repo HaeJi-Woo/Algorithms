@@ -33,7 +33,7 @@
     <ClCompile Include="Q6-08.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="소스.cpp">
+    <ClCompile Include="partition.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
