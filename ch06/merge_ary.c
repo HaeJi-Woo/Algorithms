@@ -19,7 +19,7 @@ int main(void)
 	int i, na, nb;
 	int *a, *b, *c;
 	printf("a의 요소 개수 : "); scanf("%d", &na);
-	printf("b의 요소 개수 : "); scanf("%d", &nb);
+	printf("b의 요소 개수 : "); scanf("%d", &nb); 
 	a = (int *)calloc(na, sizeof(int));
 	b = (int *)calloc(nb, sizeof(int));
 	c = (int *)calloc(na + nb, sizeof(int));
