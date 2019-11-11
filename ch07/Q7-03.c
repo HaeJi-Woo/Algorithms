@@ -33,15 +33,16 @@ int main(void)
 
 		if (m == 0) break;
 		switch (m) {
-		case 1: x = scan_data(ADD); Add(&s1,  x); break;
+		case 1: x = scan_data(ADD); Add(&s1, x); break;
 		case 2: x = scan_data(RMV); Remove(&s1, x);   break;
 		case 3: x = scan_data(SCH); idx = IsMember(s1, x);
 			printf("s1에 들어있%s.\n", idx != 0 ? "습니다" : "지 않습니다"); break;
 		case 4: s1 = s2; break;
-		case 5: printf("s1 == s2 = %s\n", s1 == s2  ? "true" : "false");
+		case 5: printf("s1 == s2 = %s\n", s1 == s2 ? "true" : "false");
 			printf("s1 & s2 = "); PrintLn(s1 & s2);
 			printf("s1 | s2 = "); PrintLn(s1 | s2);
 			printf("s1 - s2 = "); PrintLn(s1 & ~s2);
+			printf("s1 | s2 - s1 & s2 = "); PrintLn((s1 | s2) & ~(s1 & s2));
 			break;
 		case 6: x = scan_data(ADD); Add(&s2, x); break;
 		case 7: x = scan_data(RMV); Remove(&s2, x); break;
@@ -52,7 +53,7 @@ int main(void)
 	}
 	return 0;
 
-	}
+}
 
 
 
