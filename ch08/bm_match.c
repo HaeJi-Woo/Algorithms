@@ -4,7 +4,7 @@
 #include <string.h>
 #include <limits.h>
 
-int bm_match(const char txt[], const char pat[])
+int bm_match(const char txt[], const char pat[])        
 {
 	int pt;
 	int pp;
