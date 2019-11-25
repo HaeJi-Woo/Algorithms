@@ -17,7 +17,7 @@ static void SetNode(Node *n, const Member *x, const Node *next)
 int Initialize(ChainHash *h, int size)
 {
 	int i;
-	if ((h->table = (int)calloc(size, sizeof(Node *))) == NULL) {
+	if ((h->table = calloc(size, sizeof(Node *))) == NULL) {
 		h ->size = 0;
 		return 0;
 	}
@@ -52,7 +52,7 @@ int Add(ChainHash *h, const Member *x)
 		p = p->next;
 	}
 
-	if ((temp = (int)calloc(1, sizeof(Node))) == NULL)
+	if ((temp = calloc(1, sizeof(Node))) == NULL)
 		return 2;
 	SetNode(temp, x, h->table[key]);
 	h->table[key] = temp;
